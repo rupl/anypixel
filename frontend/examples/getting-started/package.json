@@ -4,10 +4,11 @@
   "description": "",
   "main": "./index.js",
   "scripts": {
-    "build": "browserify -d src/app.js > index.js",
+    "build": "./node_modules/.bin/browserify -d src/app.js > index.js",
     "postinstall": "npm run build"
   },
   "dependencies": {
-    "anypixel": "^1.0.0"
+    "anypixel": "^1.0.0",
+    "browserify": "^13.1.0"
   }
 }
